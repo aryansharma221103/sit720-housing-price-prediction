@@ -1,0 +1,6 @@
+property_id,suburb,property_type,bedrooms,land_size_sqm,actual_price,predicted_price,abs_error,pct_error,price_outlier,address
+MOS-0023,Mosman,House,4,,8700000,3908011.0,4791989.0,55.1,True,"5 Botanic Road, Mosman"
+MOS-0016,Mosman,House,4,462.0,4900000,3064095.0,1835905.0,37.5,True,"77 Belmont Road, Mosman"
+MOS-0025,Mosman,Townhouse,3,,2900000,1845972.0,1054028.0,36.3,False,"23 Dalton Road, Mosman"
+MOS-0038,Mosman,House,3,260.0,2865000,1960837.0,904163.0,31.6,False,"36 Lang Street, Mosman"
+MOS-0015,Mosman,Unit,2,,2000000,1226731.0,773269.0,38.7,False,"4/23 McLeod Street, Mosman"

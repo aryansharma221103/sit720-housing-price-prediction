@@ -1,0 +1,4 @@
+,MAE,MAPE (%),Max abs error
+ML model,170707.6,16.4,904163.0
+LLM (Claude),81500.0,9.5,280000.0
+Human (comparable-sales heuristic),401900.0,26.4,2899000.0

@@ -1,0 +1,7 @@
+{
+  "n_rows": 115,
+  "n_train": 92,
+  "n_test": 23,
+  "best_model_name": "Random Forest",
+  "best_depth_tree_sweep": 5
+}

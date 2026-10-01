@@ -1,0 +1,18 @@
+{
+  "best_model_name": "Random Forest",
+  "numeric_features": [
+    "bedrooms",
+    "bathrooms",
+    "car_spaces",
+    "land_size_sqm",
+    "bed_bath_ratio"
+  ],
+  "categorical_features": [
+    "suburb",
+    "property_type",
+    "sale_quarter"
+  ],
+  "target_transform": "log",
+  "test_r2": 0.614,
+  "test_mae": 508304.131
+}

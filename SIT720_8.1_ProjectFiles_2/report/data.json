@@ -1,0 +1,351 @@
+{
+  "misc": {
+    "n_rows": 115,
+    "n_train": 92,
+    "n_test": 23,
+    "best_model_name": "Random Forest",
+    "best_depth_tree_sweep": 5
+  },
+  "suburb": [
+    {
+      "suburb": "Mosman",
+      "count": 44.0,
+      "mean": 2010977.0,
+      "std": 2253486.0,
+      "min": 610000.0,
+      "25%": 886750.0,
+      "50%": 1112500.0,
+      "75%": 1943750.0,
+      "max": 11650000.0
+    },
+    {
+      "suburb": "Mount Druitt",
+      "count": 37.0,
+      "mean": 748749.0,
+      "std": 366553.0,
+      "min": 310000.0,
+      "25%": 420000.0,
+      "50%": 685000.0,
+      "75%": 942000.0,
+      "max": 1700000.0
+    },
+    {
+      "suburb": "Parramatta",
+      "count": 34.0,
+      "mean": 596824.0,
+      "std": 106038.0,
+      "min": 320000.0,
+      "25%": 551750.0,
+      "50%": 607500.0,
+      "75%": 660000.0,
+      "max": 855000.0
+    }
+  ],
+  "missing": [
+    {
+      "Feature": "car_spaces",
+      "n_missing": 18,
+      "pct_missing": 15.7
+    },
+    {
+      "Feature": "land_size_sqm",
+      "n_missing": 95,
+      "pct_missing": 82.6
+    }
+  ],
+  "outliers": [
+    {
+      "property_id": "MOS-0016",
+      "suburb": "Mosman",
+      "property_type": "House",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sale_price": 4900000,
+      "address": "77 Belmont Road, Mosman"
+    },
+    {
+      "property_id": "MOS-0022",
+      "suburb": "Mosman",
+      "property_type": "Unit",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sale_price": 3800000,
+      "address": "142/15 Hale Road, Mosman"
+    },
+    {
+      "property_id": "MOS-0023",
+      "suburb": "Mosman",
+      "property_type": "House",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sale_price": 8700000,
+      "address": "5 Botanic Road, Mosman"
+    },
+    {
+      "property_id": "MOS-0036",
+      "suburb": "Mosman",
+      "property_type": "House",
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "sale_price": 7650000,
+      "address": "3 Gordon Street, Mosman"
+    },
+    {
+      "property_id": "MOS-0039",
+      "suburb": "Mosman",
+      "property_type": "House",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "sale_price": 11650000,
+      "address": "21 Morella Road, Mosman"
+    },
+    {
+      "property_id": "PAR-0005",
+      "suburb": "Parramatta",
+      "property_type": "Unit",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sale_price": 855000,
+      "address": "3410/12 Phillip Street, Parramatta"
+    },
+    {
+      "property_id": "PAR-0015",
+      "suburb": "Parramatta",
+      "property_type": "Unit",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sale_price": 320000,
+      "address": "1404/1-3 Valentine Avenue, Parramatta"
+    },
+    {
+      "property_id": "PAR-0032",
+      "suburb": "Parramatta",
+      "property_type": "Unit",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sale_price": 355000,
+      "address": "1403/1-3 Valentine Avenue, Parramatta"
+    }
+  ],
+  "cv_df": [
+    {
+      "Model": "Linear Regression",
+      "CV MAE": 1574500.52,
+      "CV RMSE": 5962709.344,
+      "CV R2": -1817.447,
+      "CV R2 (train folds)": 0.591,
+      "R2 std (folds)": 3633.657
+    },
+    {
+      "Model": "Random Forest",
+      "CV MAE": 342541.369,
+      "CV RMSE": 827041.956,
+      "CV R2": 0.549,
+      "CV R2 (train folds)": 0.507,
+      "R2 std (folds)": 0.185
+    },
+    {
+      "Model": "XGBoost",
+      "CV MAE": 337902.462,
+      "CV RMSE": 877290.695,
+      "CV R2": 0.312,
+      "CV R2 (train folds)": 0.987,
+      "R2 std (folds)": 0.413
+    }
+  ],
+  "test_df": [
+    {
+      "Model": "Linear Regression",
+      "Train MAE": 310505.139,
+      "Train R2": 0.49,
+      "Test MAE": 488173.392,
+      "Test RMSE": 1204525.901,
+      "Test R2": 0.562
+    },
+    {
+      "Model": "Random Forest",
+      "Train MAE": 263389.573,
+      "Train R2": 0.576,
+      "Test MAE": 508304.131,
+      "Test RMSE": 1131259.555,
+      "Test R2": 0.614
+    },
+    {
+      "Model": "XGBoost",
+      "Train MAE": 95260.648,
+      "Train R2": 0.986,
+      "Test MAE": 532188.688,
+      "Test RMSE": 1252418.981,
+      "Test R2": 0.527
+    }
+  ],
+  "top5": [
+    {
+      "property_id": "MOS-0023",
+      "suburb": "Mosman",
+      "property_type": "House",
+      "bedrooms": 4,
+      "land_size_sqm": null,
+      "actual_price": 8700000,
+      "predicted_price": 3908011.0,
+      "abs_error": 4791989.0,
+      "pct_error": 55.1,
+      "price_outlier": true,
+      "address": "5 Botanic Road, Mosman"
+    },
+    {
+      "property_id": "MOS-0016",
+      "suburb": "Mosman",
+      "property_type": "House",
+      "bedrooms": 4,
+      "land_size_sqm": 462.0,
+      "actual_price": 4900000,
+      "predicted_price": 3064095.0,
+      "abs_error": 1835905.0,
+      "pct_error": 37.5,
+      "price_outlier": true,
+      "address": "77 Belmont Road, Mosman"
+    },
+    {
+      "property_id": "MOS-0025",
+      "suburb": "Mosman",
+      "property_type": "Townhouse",
+      "bedrooms": 3,
+      "land_size_sqm": null,
+      "actual_price": 2900000,
+      "predicted_price": 1845972.0,
+      "abs_error": 1054028.0,
+      "pct_error": 36.3,
+      "price_outlier": false,
+      "address": "23 Dalton Road, Mosman"
+    },
+    {
+      "property_id": "MOS-0038",
+      "suburb": "Mosman",
+      "property_type": "House",
+      "bedrooms": 3,
+      "land_size_sqm": 260.0,
+      "actual_price": 2865000,
+      "predicted_price": 1960837.0,
+      "abs_error": 904163.0,
+      "pct_error": 31.6,
+      "price_outlier": false,
+      "address": "36 Lang Street, Mosman"
+    },
+    {
+      "property_id": "MOS-0015",
+      "suburb": "Mosman",
+      "property_type": "Unit",
+      "bedrooms": 2,
+      "land_size_sqm": null,
+      "actual_price": 2000000,
+      "predicted_price": 1226731.0,
+      "abs_error": 773269.0,
+      "pct_error": 38.7,
+      "price_outlier": false,
+      "address": "4/23 McLeod Street, Mosman"
+    }
+  ],
+  "comparison": [
+    {
+      "property_id": "PAR-0008",
+      "suburb": "Parramatta",
+      "actual_price": 720000,
+      "ml_estimate": 638803.0,
+      "llm_estimate": 680000,
+      "human_estimate": 702000.0
+    },
+    {
+      "property_id": "MOS-0043",
+      "suburb": "Mosman",
+      "actual_price": 1175000,
+      "ml_estimate": 1173957.0,
+      "llm_estimate": 1150000,
+      "human_estimate": 955000.0
+    },
+    {
+      "property_id": "PAR-0011",
+      "suburb": "Parramatta",
+      "actual_price": 600000,
+      "ml_estimate": 577651.0,
+      "llm_estimate": 580000,
+      "human_estimate": 610000.0
+    },
+    {
+      "property_id": "PAR-0015",
+      "suburb": "Parramatta",
+      "actual_price": 320000,
+      "ml_estimate": 533420.0,
+      "llm_estimate": 430000,
+      "human_estimate": 573000.0
+    },
+    {
+      "property_id": "MOU-0011",
+      "suburb": "Mount Druitt",
+      "actual_price": 410000,
+      "ml_estimate": 418556.0,
+      "llm_estimate": 400000,
+      "human_estimate": 385000.0
+    },
+    {
+      "property_id": "MOS-0026",
+      "suburb": "Mosman",
+      "actual_price": 892000,
+      "ml_estimate": 1176716.0,
+      "llm_estimate": 980000,
+      "human_estimate": 955000.0
+    },
+    {
+      "property_id": "MOU-0020",
+      "suburb": "Mount Druitt",
+      "actual_price": 870000,
+      "ml_estimate": 847991.0,
+      "llm_estimate": 820000,
+      "human_estimate": 1000000.0
+    },
+    {
+      "property_id": "MOS-0040",
+      "suburb": "Mosman",
+      "actual_price": 1330000,
+      "ml_estimate": 1173957.0,
+      "llm_estimate": 1050000,
+      "human_estimate": 955000.0
+    },
+    {
+      "property_id": "MOS-0038",
+      "suburb": "Mosman",
+      "actual_price": 2865000,
+      "ml_estimate": 1960837.0,
+      "llm_estimate": 2700000,
+      "human_estimate": 5764000.0
+    },
+    {
+      "property_id": "PAR-0021",
+      "suburb": "Parramatta",
+      "actual_price": 547000,
+      "ml_estimate": 533420.0,
+      "llm_estimate": 520000,
+      "human_estimate": 573000.0
+    }
+  ],
+  "approach": [
+    {
+      "Approach": "ML model",
+      "MAE": 170707.6,
+      "MAPE (%)": 16.4,
+      "Max abs error": 904163.0
+    },
+    {
+      "Approach": "LLM (Claude)",
+      "MAE": 81500.0,
+      "MAPE (%)": 9.5,
+      "Max abs error": 280000.0
+    },
+    {
+      "Approach": "Human (comparable-sales heuristic)",
+      "MAE": 401900.0,
+      "MAPE (%)": 26.4,
+      "Max abs error": 2899000.0
+    }
+  ]
+}

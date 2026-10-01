@@ -1,0 +1,9 @@
+property_id,suburb,property_type,bedrooms,bathrooms,sale_price,address
+MOS-0016,Mosman,House,4,3,4900000,"77 Belmont Road, Mosman"
+MOS-0022,Mosman,Unit,3,2,3800000,"142/15 Hale Road, Mosman"
+MOS-0023,Mosman,House,4,3,8700000,"5 Botanic Road, Mosman"
+MOS-0036,Mosman,House,5,2,7650000,"3 Gordon Street, Mosman"
+MOS-0039,Mosman,House,4,4,11650000,"21 Morella Road, Mosman"
+PAR-0005,Parramatta,Unit,2,2,855000,"3410/12 Phillip Street, Parramatta"
+PAR-0015,Parramatta,Unit,1,1,320000,"1404/1-3 Valentine Avenue, Parramatta"
+PAR-0032,Parramatta,Unit,1,1,355000,"1403/1-3 Valentine Avenue, Parramatta"
